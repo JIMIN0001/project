@@ -15,4 +15,4 @@ class MyApp extends StatelessWidget {
       home: const HomePage(),
     );
   }
-}// 이 앱은 Material 디자인을 쓰고 앱 켜면 처음 보여줄 화면은 HomePage 임
+} // 이 앱은 Material 디자인을 쓰고 앱 켜면 처음 보여줄 화면은 HomePage 임cd ~/Desktop/project
