@@ -104,7 +104,9 @@ class _HomePageState extends State<HomePage> {
 
 // 새 할 일을 입력받는 BottomSheet 위젯
 class _AddTodoBottomSheet extends StatelessWidget {
-  const _AddTodoBottomSheet();
+  //글자 입력 상태를 고정해주는 장치
+  final TextEditingController _titleController = TextEditingController();
+  _AddTodoBottomSheet();
 
   @override
   Widget build(BuildContext context) {
@@ -149,6 +151,7 @@ class _AddTodoBottomSheet extends StatelessWidget {
             children: [
               // 제목 입력 필드
               TextField(
+                controller: _titleController,
                 autofocus: true,
                 cursorColor: const Color(0xFF8D7B68), // 커서 색상
                 decoration: const InputDecoration(
